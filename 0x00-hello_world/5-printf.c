@@ -2,8 +2,6 @@
 /**
  * main - entry point
  *
- * Description : 'to describe'
- *
  * return : Always 0 ( success)
  */
 int main(void)
