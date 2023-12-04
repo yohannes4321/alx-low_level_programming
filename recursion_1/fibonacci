@@ -1,0 +1,27 @@
+/*Write a C++ program to implement a recursive function to get the nth Fibonacci number.*/
+/**
+ * main -fibonacci
+ * return 0:successful
+ * */
+ 
+#include<iostream>
+using namespace std;
+int fabonacci(int num);
+int main()
+{
+    int num;
+    cout<<"fibonacci number of nTH number "<<endl;
+    cin >>num;
+    cout<<"the fabonacci for" <<num<<"is ="<<endl;
+    int k=fabonacci(num);
+    cout<<k;
+ return 0;   
+}
+int fabonacci(int num)
+{
+    //base case for input x = 0 or 1 return the same result xor
+    //rember that in base case in if clause we must use == not = allways use ==two equall sign comparssion
+    if (num ==0 || num==1)
+    return num;
+    else
+    return(fabonacci(num-1)+fabonacci(num-2));

@@ -1,0 +1,21 @@
+// Recursive function to calculate the sum of digits
+ #include<iostream>
+ using namespace std;
+ int sum_digit(int num);
+ int main()
+ {
+     int num;
+     cout<<"enter a number ";
+     cin>>num;
+     cout <<"the sum of the digit is "<<endl;
+     cout<<sum_digit(num);
+     
+ }
+ int sum_digit(int num)
+ {
+     //base case between 0 and 9 there is sum is the number itself 
+     if (num >= 0 && num<=9)
+     return num;
+     else
+     return(num %10 + sum_digit(num/10));
+ }

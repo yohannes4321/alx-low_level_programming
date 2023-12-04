@@ -1,0 +1,26 @@
+/* Write a C++ program to calculate the factorial of a given number using recursion.*/
+ /**
+  * main - find factorial 
+  * return :0 is (successfull)
+  * */
+  
+ #include<iostream>
+ using namespace std;
+ int factorial(int num);
+ int main()
+ {
+     int num;
+     cout<<"Enter the number to get the factorial"<<endl;
+     cin >>num;
+     cout<<"factorial for "<<num <<"is =";
+     
+     cout<<factorial(num);
+     return 0;
+ }
+  int factorial(int num)
+  {
+      //base case is factorial of 0 & 1 = 1
+      if (num ==0 || num ==1)
+      return 1;
+      else
+      return(num+factorial(num-1));
